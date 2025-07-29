@@ -6,6 +6,9 @@ const app = express();
 app.use(cors());
 
 const API_KEY = "fed323162d984587ae7e3c8c78226d94";
+app.get("/", (req, res) => {
+  res.send(" News Proxy Backend is running!");
+});
 
 app.get("/news", async (req, res) => {
   try {
